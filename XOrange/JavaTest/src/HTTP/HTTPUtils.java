@@ -36,9 +36,9 @@ public class HTTPUtils {
      * @return 服务器响应结果字符串
      */
     public static String dealResponseResult(InputStream inputStream) {
-        String resultData = null;
+        String resultData;
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-        byte[] data = new byte[1];
+        byte[] data = new byte[1024];
         int len;
         try {
             while ((len = inputStream.read(data)) != -1) {

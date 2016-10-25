@@ -1,4 +1,4 @@
-package ztc.GBN;
+package ztc.GBN.GBNWithoutWindow;
 
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;

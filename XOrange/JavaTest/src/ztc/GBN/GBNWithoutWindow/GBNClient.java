@@ -1,4 +1,4 @@
-package ztc.GBN;
+package ztc.GBN.GBNWithoutWindow;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;

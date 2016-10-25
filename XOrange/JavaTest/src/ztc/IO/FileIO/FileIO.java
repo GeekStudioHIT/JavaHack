@@ -1,9 +1,9 @@
-package IO.FileIO;
+package ztc.IO.FileIO;
 
 import java.io.*;
 
 public class FileIO {
-    private static final String FILE_PATH = "./src/IO/FileIO/呐喊.txt";
+    private static final String FILE_PATH = "./src/ztc.IO/FileIO/呐喊.txt";
 
     /**
      * 以字节为单位读取文件内容

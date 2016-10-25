@@ -1,4 +1,4 @@
-package HTTP;
+package ztc.HTTP;
 
 import java.io.*;
 import java.net.URLEncoder;

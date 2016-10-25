@@ -1,4 +1,4 @@
-package IO;
+package ztc.IO;
 
 public class Dir {
     public static void main(String[] args) {

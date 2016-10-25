@@ -1,4 +1,4 @@
-package IO.TextFileTest;
+package ztc.IO.FileIO.TextFileTest;
 
 import java.io.*;
 import java.util.Scanner;
@@ -12,11 +12,11 @@ public class TestFileTest {
         staff[2] = new Employee("Tony Tester", 40000, 1990, 3, 15);
 
         try {
-            PrintWriter out = new PrintWriter("./src/IO/TextFileTest/employee.txt");
+            PrintWriter out = new PrintWriter("./src/ztc/IO/TextFileTest/employee.txt");
             writeData(staff, out);
             out.close();
 
-            Scanner in = new Scanner(new FileReader("./src/IO/TextFileTest/employee.txt"));
+            Scanner in = new Scanner(new FileReader("./src/ztc/IO/TextFileTest/employee.txt"));
             Employee[] newStaff = readData(in);
             in.close();
 

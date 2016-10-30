@@ -24,7 +24,7 @@ public class GBNServer {
                     serverSocket.send(sendPacket);
                     endReceive++;
                     System.out.println("服务端发送 ack= " + seq);
-                }else if (endReceive != -1){
+                } else if (endReceive != -1) {
                     byte[] ackData = new String("ack"+endReceive).getBytes();
                     InetAddress clientAddress = receivePacket.getAddress();
                     int clientPort = receivePacket.getPort();
@@ -32,15 +32,6 @@ public class GBNServer {
                     serverSocket.send(sendPacket);
                     System.out.println("服务端发送 ack= " + endReceive);
                 }
-
-//				//接收成功，发ack;
-//				byte[] ackData = new String("ack"+hasReceive).getBytes();
-//				InetAddress clientAddress = receivePacket.getAddress();
-//				int clientPort = receivePacket.getPort();
-//				DatagramPacket sendPacket = new DatagramPacket(ackData, ackData.length, clientAddress, clientPort);
-//				serverSocket.send(sendPacket);
-//				if (seq == hasReceive)
-//					hasReceive++;
             }
         }
     }

@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 public class GBNClient {
     public static int WIN_SIZE;
-    public static int start=0, end, dataCount;
+    public static int start = 0, end, dataCount;
     public static void main(String[] args) throws Exception {
         InetAddress serverAddress = InetAddress.getByName("localhost");
         DatagramSocket clientSocket = new DatagramSocket(9999);
@@ -26,7 +26,7 @@ public class GBNClient {
         System.out.println("滑动窗大小为" + WIN_SIZE);
         System.out.println("客户端即将发送" + dataCount +"个数据包");
 
-        for (int i=start;i<=end;i++){
+        for (int i = start; i <= end; i++){
             sendData = (i + "seq").getBytes();
             DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, serverAddress, 8888);
             clientSocket.send(sendPacket);
@@ -63,10 +63,10 @@ public class GBNClient {
 }
 
 class DelayActionListener implements ActionListener {
-
     DatagramSocket clientSocket;
     int end_ack;
     Timer[] timers;
+
     public DelayActionListener(DatagramSocket clientSocket, int end_ack, Timer[] timers){
         this.clientSocket = clientSocket;
         this.end_ack = end_ack;
@@ -77,7 +77,7 @@ class DelayActionListener implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         int end = GBNClient.end;
         System.out.println("客户端准备重传数据 " + end_ack +"--" + end);
-        for (int i=end_ack;i<=end;i++){
+        for (int i = end_ack; i <= end; i++){
             byte[] sendData;
             InetAddress serverAddress = null;
             try {

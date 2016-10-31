@@ -1,4 +1,4 @@
-package ztc.Thread;
+package ztc.Thread.base;
 
 /**
  * 隋唐演义大戏舞台

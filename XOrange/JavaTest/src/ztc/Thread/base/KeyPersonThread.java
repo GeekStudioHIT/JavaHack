@@ -1,4 +1,4 @@
-package ztc.Thread;
+package ztc.Thread.base;
 
 public class KeyPersonThread extends Thread {
 	@Override

@@ -1,4 +1,4 @@
-package ztc.Thread;
+package ztc.Thread.base;
 
 /**
  * 军队线程

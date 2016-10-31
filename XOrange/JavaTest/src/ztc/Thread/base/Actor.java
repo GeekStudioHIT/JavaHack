@@ -1,4 +1,4 @@
-package ztc.Thread;
+package ztc.Thread.base;
 
 public class Actor extends Thread {
     @Override

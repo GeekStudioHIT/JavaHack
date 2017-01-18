@@ -18,7 +18,7 @@ public class Main {
 //        postResult = HTTPUtils.getRequestData(params, "utf-8");
 //        System.out.println(postResult);
         try {
-            File file = new File("./src/ztc/HTTP/test.txt");
+            File file = new File("./src/ztc/HTTP/Test.txt");
             FileInputStream fileInputStream = new FileInputStream(file);
             System.out.println(HTTPUtils.dealResponseResult(fileInputStream));
         } catch (FileNotFoundException e) {
